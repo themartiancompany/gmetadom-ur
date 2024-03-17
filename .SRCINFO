@@ -2,10 +2,11 @@ pkgbase = gmetadom
 	pkgdesc = DOM level2 library for accessing XML files
 	pkgver = 0.2.6
 	pkgrel = 1
-	url = http://gmetadom.sourceforge.net/
+	url = http://gmetadom.sourceforge.net
 	arch = any
 	license = LGPL
-	source = https://sourceforge.net/projects/gmetadom/files/gmetadom/0.2.6/gmetadom-0.2.6.tar.gz/download
-	sha512sums = SKIP
+	depends = gdome2
+	source = gmetadom-0.2.6.tar.gz::https://sourceforge.net/projects/gmetadom/files/gmetadom/0.2.6/gmetadom-0.2.6.tar.gz/download
+	sha512sums = 69521b8d667d832259687d34c8855ece51fbcbffe3b54a8d588cad402cb45e8e30259b0627dd0badc4aa7efcf39f8ceb3c62eb76916ca1104481f65ddc31c6bf
 
 pkgname = gmetadom
