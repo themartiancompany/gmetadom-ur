@@ -9,11 +9,15 @@ url="http://gmetadom.sourceforge.net/"
 license=(LGPL)
 depends=()
 makedepends=()
-source=("https://sourceforge.net/projects/$pkgname/files/$pkgname/$pkgver/$pkgname-$pkgver.tar.gz/download")
-sha512sums=('SKIP')
+source=(
+  "https://sourceforge.net/projects/$pkgname/files/$pkgname/$pkgver/$pkgname-$pkgver.tar.gz/download"
+)
+sha512sums=(
+  'SKIP'
+)
 
 build() {
-  cd $pkgname-$pkgver
+  cd "${pkgname}-${pkgver}"
   ./configure \
     --prefix=/usr \
     --enable-debug=no
@@ -21,5 +25,14 @@ build() {
 }
 
 package() {
-  DESTDIR="$pkgdir" make install
+  DESTDIR="$pkgdir" \
+    make \
+      install
 }
+# SPDX-License-Identifier: AGPL-3.0
+#
+# Maintainer: Truocolo <truocolo@aol.com>
+}
+
+# vim: ft=sh syn=sh et
+# Maintainer: Pellegrino Prevete <pellegrinoprevete@gmail.com>
